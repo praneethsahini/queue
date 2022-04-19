@@ -1,0 +1,10 @@
+CREATE_QUEUE abc
+CREATE_QUEUE
+PUBLISH abc "mymessage"
+PUBLISH
+PUBLISH abc "mymessage2"
+CREATE_SUBSCRIBER abc consumer-1
+PUBLISH abc "mymessage3"
+PUBLISH abc "mymessage4"
+CREATE_SUBSCRIBER abc consumer-2
+CREATE_SUBSCRIBER
